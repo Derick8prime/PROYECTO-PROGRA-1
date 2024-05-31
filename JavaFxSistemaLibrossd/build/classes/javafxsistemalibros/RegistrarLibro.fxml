@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsistemalibros.RegistrarLibroController">
+   <children>
+      <GridPane layoutX="110.0" layoutY="21.0" prefHeight="357.0" prefWidth="381.0" style="-fx-background-color: black;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="271.0" minWidth="10.0" prefWidth="81.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="465.0" minWidth="10.0" prefWidth="300.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ISBN" textFill="WHITE" GridPane.rowIndex="1" />
+            <Label text="TITULO" textFill="WHITE" GridPane.rowIndex="2" />
+            <Label text="AUTOR" textFill="WHITE" GridPane.rowIndex="3" />
+            <Label text="AÑO" textFill="WHITE" GridPane.rowIndex="4" />
+            <Label text="EDITORIAL" textFill="WHITE" GridPane.rowIndex="5" />
+            <Label text="CANTIDAD" textFill="WHITE" GridPane.rowIndex="6" />
+            <Button fx:id="btnRegistrarLibro" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonRegistrarLibro" style="-fx-background-color: RED;" text="REGISTRAR LIBRO" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="8" />
+            <TextField fx:id="titulo" promptText="Ingrese Titulo" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="autor" prefHeight="25.0" prefWidth="361.0" promptText="Ingrese nombre del autor" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="editorial" promptText="Nombre de Editorial" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="cantidad" promptText="Cantidad Libros" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="185.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="isbn" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="185.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="REGISTRO DE LIBROS" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label text="PRECIO" textFill="WHITE" GridPane.rowIndex="7" />
+            <TextField fx:id="precio" promptText="Precio" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets right="185.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="anioP" promptText="Ingrese el año de Publicacion" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>

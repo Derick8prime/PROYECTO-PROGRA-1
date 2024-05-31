@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="424.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsistemalibros.RegistrarUsuarioController">
+   <children>
+      <GridPane layoutY="70.0" prefHeight="496.0" prefWidth="425.0" style="-fx-background-color: black;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="138.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="225.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="33.0" minHeight="10.0" prefHeight="11.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="PRIMER NOMBRE" textFill="WHITE" GridPane.rowIndex="1" />
+            <Label text="SEGUNDO NOMBRE" textFill="WHITE" GridPane.rowIndex="2" />
+            <Label text="PRIMER APELLIDO" textFill="WHITE" GridPane.rowIndex="3" />
+            <Label text="SEGUNDO APELLIDO" textFill="WHITE" GridPane.rowIndex="4" />
+            <Label text="DIRECCION" textFill="WHITE" GridPane.rowIndex="8" />
+            <Label text="TELEFONO" textFill="WHITE" GridPane.rowIndex="9" />
+            <Button fx:id="btnRegistrarUsuario" mnemonicParsing="false" onAction="#buttonRegistrarUsuario" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: red;" text="REGISTRAR USUARIO" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="10" GridPane.valignment="BOTTOM" />
+            <TextField fx:id="PrimerN" maxHeight="1.7976931348623157E308" promptText="PRIMER NOMBRE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="SegundoN" maxHeight="1.7976931348623157E308" promptText="SEGUNDO NOMBRE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="PrimerA" maxHeight="1.7976931348623157E308" promptText="PRIMER APELLIDO" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="SegundoA" maxHeight="1.7976931348623157E308" promptText="SEGUNDO APELLIDO" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="Direccion" maxHeight="1.7976931348623157E308" promptText="DIRECCION" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="Telefono" maxHeight="1.7976931348623157E308" promptText="TELEFONO" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="Cui" maxHeight="1.7976931348623157E308" promptText="CUI" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin></TextField>
+            <Label text="CUI" textFill="WHITE" GridPane.rowIndex="7" />
+            <Label text="EMAIL" textFill="WHITE" GridPane.rowIndex="5" />
+            <Label text="CONTRASEÑA" textFill="WHITE" GridPane.rowIndex="6" />
+            <TextField fx:id="Email" maxHeight="1.7976931348623157E308" promptText="EMAIL" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="Pass" maxHeight="1.7976931348623157E308" promptText="CONTRASEÑA" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+         </padding>
+      </GridPane>
+      <Label alignment="CENTER" prefHeight="70.0" prefWidth="425.0" style="-fx-background-color: red;" text=" REGISTRAR USUARIO" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
