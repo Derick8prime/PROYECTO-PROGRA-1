@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="491.0" prefWidth="983.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="javafxsistemalibros.LibrosAlquiladosController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="55.0" prefWidth="983.0" style="-fx-background-color: red;" text="Listado de Libros Alquilados" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaAlquilerLibros" layoutY="136.0" prefHeight="320.0" prefWidth="983.0">
+        <columns>
+            <TableColumn fx:id="colCodigo" prefWidth="96.0" text="Codigo Cliente" />
+          <TableColumn fx:id="colCliente" prefWidth="228.0" text="Cliente" />
+          <TableColumn fx:id="colLibro" minWidth="0.0" prefWidth="170.0" text="Libro" />
+            <TableColumn fx:id="colFechaA" prefWidth="151.0" text="Fecha de Alquiler" />
+            <TableColumn fx:id="colFechaE" prefWidth="154.0" text="Fecha de Entrega" />
+            <TableColumn fx:id="colEstado" prefWidth="82.0" text="Estado" />
+            <TableColumn fx:id="colMulta" prefWidth="101.0" text="Multa" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
